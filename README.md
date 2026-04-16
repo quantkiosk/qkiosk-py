@@ -1,7 +1,7 @@
 <img src="https://quantkiosk.com/assets/img/qk-logo.png" height="40" />
 
 >[!IMPORTANT]
-> **FREE API keys are now enabled for all accounts. Get yours [here](https://quantkiosk.com?ref=github-qkiosk-r)!!**
+> **FREE API keys are now enabled for all accounts. Get yours [here](https://quantkiosk.com?ref=github-qkiosk-py)!!**
 >
 > Paid plans will be open in the coming weeks as we finish backfill and add more features!
 
@@ -21,7 +21,7 @@ Official interface to [QUANTkiosk](https://quantkiosk.com) data api.
 
 ### Installation
 ```bash
-# install from PyPi (released version)
+# install from [PyPi](https://pypi.org/project/qkiosk/) (released version)
 pip install qkiosk
 
 # install from github (development version)
@@ -36,7 +36,7 @@ enter your email and your account key will be good for 250 credits a day. More t
 make use of the API. If you need more data, just select an appropriate plan.
 
 ```python
-## Set your API key in the R session after you've load the freshly installed package
+## Set your API key in the python session after you've load the freshly installed package
 
 import qkiosk as qk
 qk.set_apikey("<YOUR_API_KEY>")
@@ -44,7 +44,7 @@ qk.set_apikey("<YOUR_API_KEY>")
 
 >[!TIP]
 >```bash
->## you can also set up your key in your shell to avoid having to set it in R
+>## you can also set up your key in your shell to avoid having to set it in python
 >## this is more permanent and definitely how you would do it in production
 >
 >export QK_API_KEY=<YOUR_API_KEY>
@@ -65,8 +65,6 @@ qk.set_apikey("<YOUR_API_KEY>")
 >#     crox        Crocs Institutional Holders Details By Issuer
 >#     deshaw      D.E. Shaw Institutional Ownership Details (Including Submanagers)
 >#     nke         Nike (NKE) Insider Ownership Data
->#     nvda_intent Nvidia (NVDA) Restricted or Control Shares Intention to Sell
->#     nvda_sales  Nvidia (NVDA) Restricted or Control Shares Sold
 >#     pershing    Pershing Square Beneficial and Activist Details
 >#     pfe         Pfizer (PFE) Revenue Data
 >#     sgcap       SG Capital Institutional Ownership Details (Aggregated)
@@ -147,7 +145,7 @@ janest
 
 ```
 
-There is *way* more to know about the **QKID**, but this is the README, so we will move along.  Be sure to try conversion tools like `qk.ticker("AAPL")` and `to.ticker(qk.cik(320187))` to see the power
+There is *way* more to know about the **QKID**, but this is the README, so we will move along.  Be sure to try conversion tools like `qk.ticker("AAPL")` and `qk.cik(320187).to_ticker()` to see the power
 for yourself.
 
 >[!NOTE]
