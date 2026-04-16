@@ -20,13 +20,14 @@ Official interface to [QUANTkiosk](https://quantkiosk.com) data api.
 * Internal caching to minimize external requests and data usage
 
 ### Installation
+# install from [PyPi](https://pypi.org/project/qkiosk/)
 ```bash
-# install from [PyPi](https://pypi.org/project/qkiosk/) (released version)
 pip install qkiosk
+```
 
 # install from github (development version)
+```bash
 pip install git+https://github.com/quantkiosk/qkiosk-py.git
-
 ```
 
 ### Set up your API key
