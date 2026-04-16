@@ -7,4 +7,4 @@
 
 Official interface to [QUANTkiosk](https://quantkiosk.com) data api.
 
-TO BE RELEASED SOON
+TO BE RELEASED SOON.
