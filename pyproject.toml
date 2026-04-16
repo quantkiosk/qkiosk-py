@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=70.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="qkiosk"
+version="0.2.21"
+requires-python = ">=3.10"
+readme="README.md"
+license = "GPL-3.0-or-later"
+description="Python Client for QUANTkiosk"
+authors = [
+  {name="QUANTkiosk", email="support@quantkiosk.com"},
+]
+dependencies = [
+    "numpy>=1.23.5; python_version < '3.12'",
+    "numpy>=1.26.0; python_version >= '3.12'",
+    "pandas>=1.5.3,<4.0.0",
+    "requests>=2.27.0",
+]
+
+[project.urls]
+Homepage = "https://quantkiosk.com"
+Documentation = "https://docs.quantkiosk.com"
+Repository = "https://github.com/quantkiosk/qkiosk-py"
+"Bug Tracker" = "https://github.com/quantkiosk/qkiosk-py/issues"
