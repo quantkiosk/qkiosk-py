@@ -19,6 +19,11 @@ dependencies = [
     "requests>=2.27.0",
 ]
 
+[dependency-groups]
+test = [
+    "pytest>=7.0",
+]
+
 [project.urls]
 Homepage = "https://quantkiosk.com"
 Documentation = "https://docs.quantkiosk.com"
